@@ -18,8 +18,9 @@ function deleteNth(arr,n){
       }
     }
   }
-  return final
+
+  return arr
 }
 
-console.log(deleteNth([1,1,3,3,7,2,2,2,2], 3))
+console.log(deleteNth([ 20, 37, 21 ], 1))
 
