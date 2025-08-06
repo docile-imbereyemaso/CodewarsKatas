@@ -1,11 +1,11 @@
-const divisions  = (n,divisor)=>{
-    let result =[];
-    while(n>1){
-        n /= divisor
-        result.push(Math.round(n));
+
+const divisions=(n,divisor)=>{
+    let count=0;
+
+    while(n>=divisor){
+        n =n/divisor;
+        count++
     }
-
-    return result.length>1?result.filter((n)=>n!==1).length:result.length;
+    return count
 }
-
-console.log(divisions(100,2))
+console.log(divisions(2,3))
