@@ -1,6 +1,4 @@
 function likes(names) {
-  // TODO
-
  if(names.length==0){
     return "no one likes this";
  }else if(names.length===1){
@@ -10,8 +8,8 @@ function likes(names) {
  }else if(names.length===3){
     return names.slice(0,2).join(", ")+" and "+names.slice(2)+" like this"
  }else{
-    return names.slice(0,2).join(", ")+" and " + names.slice(2).length
+    return names.slice(0,2).join(", ")+" and " + names.slice(2).length+" others like this";
  }
 }
 
-console.log(likes(["Alex", "Jacob", "Mark", "Max"]))
+console.log(likes(["Alex", "Jacob", "Mark", "Max", "Jacob", "Mark", "Max"]))
