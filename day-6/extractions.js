@@ -14,7 +14,7 @@ for(let i=0;i<textarray.length;i++){
     }
 } 
 return result.map(word=>{
-    return 
-})
+  return word.replace(/[^a-zA-Z0-9]/g, ''); 
+}).filter(element=>element.length>2)
 }
 console.log(getMichaelLastName(inputText))
