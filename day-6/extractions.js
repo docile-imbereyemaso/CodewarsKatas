@@ -7,9 +7,9 @@ function getMichaelLastName(inputText) {
 
 for(let i=0;i<textarray.length;i++){
     if(textarray[i]==="Michael"){
-   if(!textarray[i+1].length<=2){
+   
     result.push(textarray[i+1])
-   }
+   
        
     }
 } 
