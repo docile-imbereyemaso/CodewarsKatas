@@ -5,16 +5,14 @@ function solution(array) {
 
   for(let i=min;i<=max;i++){
   if(!array.includes(i)){
-     missing = i
-    
-  }
-  if(array.indexOf(i)!==array.lastIndexOf(i)){
-     duplicate =i
+    console.log(i)
+     missing = i  
   }
   }
-
+ duplicate = array.find((element,index,self)=>self.indexOf(element)!==index)||max;
+ 
 
   return [missing,duplicate];
 }
 
-console.log(solution([2,4,1,6,3,4]))
+console.log(solution([1,2]))
