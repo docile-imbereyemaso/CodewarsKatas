@@ -23,6 +23,14 @@ class Shark extends Animal {
 
 class Cat extends Animal {
   // Do the same here as you did for Shark - define your constructor function and any other methods you need
+  constructor(name,age,status){
+  super(name,age,null,null,status)
+    this.legs =4;
+    this.species ="cat";
+  }
+   introduce() {
+    return `Hello, my name is ${this.name} and I am ${this.age} years old.  Meow meow!`;
+  }
 }
 
 class Dog extends Animal {
@@ -30,4 +38,9 @@ class Dog extends Animal {
 }
 
 const shark = new Shark("Billy",3,"Alive and well");
-console.log(shark)
+console.log(shark);
+
+const cat = new Cat("Cathy", 7, "Playing with a ball of yarn");
+console.log(cat);
+
+console.log(cat.introduce());
