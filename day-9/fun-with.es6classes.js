@@ -14,8 +14,10 @@ class Animal {
 // Get Coding :)
 
 class Shark extends Animal {
-  constructor(/* Insert your parameters here */) {
-    super(/* Make a call to the parent class's constructor with the correct arguments */);
+  constructor(name,age,status) {
+    super(name,age,null,null,status);
+    this.legs =0;
+    this.species = "shark";
   }
 }
 
@@ -26,3 +28,6 @@ class Cat extends Animal {
 class Dog extends Animal {
   // On your own now - you can do it :D
 }
+
+const shark = new Shark("Billy",3,"Alive and well");
+console.log(shark)
