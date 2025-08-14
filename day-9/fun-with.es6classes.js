@@ -35,6 +35,15 @@ class Cat extends Animal {
 
 class Dog extends Animal {
   // On your own now - you can do it :D
+  constructor(name,age,status,master){
+     super(name,age,null,null,status);
+     this.legs = 4;
+     this.species ="dog";
+     this.master = master;
+  }
+  greetMaster(){
+    return `Hello ${this.master}`;
+  }
 }
 
 const shark = new Shark("Billy",3,"Alive and well");
@@ -44,3 +53,7 @@ const cat = new Cat("Cathy", 7, "Playing with a ball of yarn");
 console.log(cat);
 
 console.log(cat.introduce());
+
+const dog = new Dog("Doug", 12, "Serving his master", "Eliza");
+console.log(dog);
+console.log(dog.greetMaster());
